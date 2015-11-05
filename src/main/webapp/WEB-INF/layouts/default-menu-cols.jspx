@@ -25,7 +25,7 @@
   <body class="tundra spring">
 
   		<!-- Fixed navbar -->
-  		<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+  		<header class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
 			       <tiles:insertAttribute ignore="true" name="header"/>
 
@@ -62,9 +62,7 @@
 		<!-- Footer
     	================================================== -->
 	    <footer class="bs-footer" role="contentinfo">
-
 	      <tiles:insertAttribute ignore="true" name="footer"/>
-
 	    </footer>
 
 	</body>
