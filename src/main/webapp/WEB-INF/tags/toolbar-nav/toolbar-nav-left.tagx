@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jsp:root xmlns:c="http://java.sun.com/jsp/jstl/core"
+xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+xmlns:jsp="http://java.sun.com/JSP/Page"
+xmlns:spring="http://www.springframework.org/tags" version="2.0">
+
+<jsp:output omit-xml-declaration="yes"/>
+
+  <aside>
+    <nav class="navbar navbar-inverse sidebar navbar-fixed-side-left" role="navigation">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".left-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar">&#160;</span>
+            <span class="icon-bar">&#160;</span>
+            <span class="icon-bar">&#160;</span>
+          </button>
+          <a class="navbar-brand" href="#">Tools <span class="pull-right hidden-xs showopacity glyphicon glyphicon-transfer"></span></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse left-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Tool<span class="pull-right hidden-xs showopacity glyphicon glyphicon-align-justify"></span></a></li>
+            <li><a href="#">Tool 2<span  class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a></li>
+            <li class="dropdown last">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Tool 3 <span class="caret">&#160;</span><span class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span>
+              </a>
+              <ul class="dropdown-menu forAnimate" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </aside>
+
+
+</jsp:root>
