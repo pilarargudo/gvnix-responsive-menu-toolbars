@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gvnix-menu id="_menu" rooMenuBasePath="/">
+<menu-item id="c_vet" labelCode="menu_category_vet_label" name="Vet">
+        <menu-item hidden="false" id="i_vet_new" labelCode="menu_item_vet_new_label" messageCode="global_menu_new" roles="" url="/vets?form"/>
+    <menu-item hidden="false" id="i_vet_list" labelCode="menu_item_vet_list_label" messageCode="global_menu_list" roles="" url="/vets?page=1&amp;size=${empty param.size ? 10 : param.size}"/>
+    </menu-item>
+<menu-item id="c_owner" labelCode="menu_category_owner_label" name="Owner">
+        <menu-item hidden="false" id="i_owner_new" labelCode="menu_item_owner_new_label" messageCode="global_menu_new" roles="" url="/owners?form"/>
+    <menu-item hidden="false" id="i_owner_list" labelCode="menu_item_owner_list_label" messageCode="global_menu_list" roles="" url="/owners?page=1&amp;size=${empty param.size ? 10 : param.size}"/>
+    <menu-item hidden="false" id="i_owner_report_owners_report" labelCode="menu_item_owner_report_owners_report_label" messageCode="menu_owner_report_owners_report" roles="" url="/owners/reports/report_owners?form"/>
+    </menu-item>
+<menu-item id="c_visit" labelCode="menu_category_visit_label" name="Visit">
+        <menu-item hidden="false" id="i_visit_new" labelCode="menu_item_visit_new_label" messageCode="global_menu_new" roles="" url="/visits?form"/>
+    <menu-item hidden="false" id="i_visit_list" labelCode="menu_item_visit_list_label" messageCode="global_menu_list" roles="" url="/visits?page=1&amp;size=${empty param.size ? 10 : param.size}"/>
+    <menu-item hidden="false" id="fi_visit_descriptionandvisitdate" labelCode="menu_item_visit_descriptionandvisitdate_label" messageCode="global_menu_find" roles="" url="/visits?find=ByDescriptionAndVisitDate&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}"/>
+    <menu-item hidden="false" id="fi_visit_descriptionlike" labelCode="menu_item_visit_descriptionlike_label" messageCode="global_menu_find" roles="" url="/visits?find=ByDescriptionLike&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}"/>
+    <menu-item hidden="false" id="fi_visit_visitdatebetween" labelCode="menu_item_visit_visitdatebetween_label" messageCode="global_menu_find" roles="" url="/visits?find=ByVisitDateBetween&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}"/>
+    </menu-item>
+<menu-item id="c_pet" labelCode="menu_category_pet_label" name="Pet">
+        <menu-item hidden="false" id="i_pet_new" labelCode="menu_item_pet_new_label" messageCode="global_menu_new" roles="" url="/pets?form"/>
+    <menu-item hidden="false" id="i_pet_list" labelCode="menu_item_pet_list_label" messageCode="global_menu_list" roles="" url="/pets?page=1&amp;size=${empty param.size ? 10 : param.size}"/>
+    <menu-item hidden="false" id="fi_pet_nameandweight" labelCode="menu_item_pet_nameandweight_label" messageCode="global_menu_find" roles="" url="/pets?find=ByNameAndWeight&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}"/>
+    <menu-item hidden="false" id="fi_pet_owner" labelCode="menu_item_pet_owner_label" messageCode="global_menu_find" roles="" url="/pets?find=ByOwner&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}"/>
+    <menu-item hidden="false" id="fi_pet_sendremindersandweightlessthan" labelCode="menu_item_pet_sendremindersandweightlessthan_label" messageCode="global_menu_find" roles="" url="/pets?find=BySendRemindersAndWeightLessThan&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}"/>
+    <menu-item hidden="false" id="fi_pet_typeandnamelike" labelCode="menu_item_pet_typeandnamelike_label" messageCode="global_menu_find" roles="" url="/pets?find=ByTypeAndNameLike&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}"/>
+    </menu-item>
+</gvnix-menu>

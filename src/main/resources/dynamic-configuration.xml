@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dynamic-configuration>
+
+	<active>local</active>
+	
+	<base>
+        <component id="org.gvnix.dynamic.configuration.roo.addon.config.Log4jDynamicConfiguration" name="Logging Service Properties">
+            <property>
+                <key>log4j.rootLogger</key>
+                <value>INFO, stdout</value>
+            </property>
+        </component>
+    </base>
+
+<configuration name="local">
+        <component id="org.gvnix.dynamic.configuration.roo.addon.config.Log4jDynamicConfiguration" name="Logging Service Properties">
+            <property>
+                <key>log4j.rootLogger</key>
+                <value>ERROR</value>
+            </property>
+        </component>
+    </configuration>
+</dynamic-configuration>
