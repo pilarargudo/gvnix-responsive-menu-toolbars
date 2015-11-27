@@ -14,5 +14,11 @@ $(document).ready(function() {
       $('body').addClass('right');
   };
 
+//init tooltip and position
+   $('.sidebar.navbar-fixed-side-left [data-toggle="tooltip"]').tooltip({"placement":"right"});
+   $('.sidebar.navbar-fixed-side-right [data-toggle="tooltip"]').tooltip({"placement":"left"});
+   $('.navbar-default.navbar-fixed-top [data-toggle="tooltip"]').tooltip({"placement":"bottom"});
+   $('.navbar-default.navbar-fixed-bottom [data-toggle="tooltip"]').tooltip({"placement":"top"});
 });
+
 
