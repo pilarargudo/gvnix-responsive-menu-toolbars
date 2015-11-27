@@ -2,29 +2,41 @@
   <jsp:directive.page contentType="text/html;charset=UTF-8" />
   <jsp:output omit-xml-declaration="yes" />
 
-      <spring:url var="logo_gvnix" value="/resources/images/logo_gvnix.png" />
-      <spring:url var="home" value="/" />
-      <spring:message code="button_home" var="home_label" htmlEscape="false" />
+  <div class="navbar-header">
+        <spring:url var="logo_gvnix" value="/resources/images/logo_gvnix.png" />
+        <spring:url var="home" value="/" />
+        <spring:message code="button_home" var="home_label" htmlEscape="false" />
 
-			<div class="pull-left">
-        <a href="${home}" name="${fn:escapeXml(home_label)}"
-        title="${fn:escapeXml(home_label)}">
-				  <img src="${logo_gvnix}" />
-        </a>
-			</div>
+        <!-- COLLAPSE BUTTON -->
+        <c:if test="${pageContext['request'].userPrincipal != null}">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".gvnix-navbar-collapse">
+            <span class="icon-bar">&#160;</span>
+            <span class="icon-bar">&#160;</span>
+            <span class="icon-bar">&#160;</span>
+        </button>
+        </c:if>
 
-			<div class="pull-right">
+        <!-- BRAND LOGO -->
+        <div class="pull-left">
+          <a href="${home}" name="${fn:escapeXml(home_label)}"
+          title="${fn:escapeXml(home_label)}">
+            <img src="${logo_gvnix}" />
+          </a>
+        </div>
 
-        <spring:message code="application_name" var="project_name" htmlEscape="false" />
+  </div>
 
-				<a class="navbar-brand nav navbar-right" href="${home}"
-				name="${fn:escapeXml(home_label)}"
-				title="${fn:escapeXml(home_label)}">${fn:escapeXml(project_name)}</a>
+  <!-- APPLICATION NAME -->
+  <div class="pull-right" >
+          <spring:message code="application_name" var="project_name" htmlEscape="false" />
+          <a class="navbar-brand nav navbar-right" href="${home}"
+          name="${fn:escapeXml(home_label)}"
+          title="${fn:escapeXml(home_label)}">${fn:escapeXml(project_name)}</a>
 
-			</div>
+  </div>
 
 </div>
-
 
 
 

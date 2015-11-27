@@ -132,16 +132,44 @@
     <script src="${js_jquery_datatables_advancedfilter_url}" type="text/javascript">
         <!--required for FF3 and Opera-->
     </script>
-<spring:url value="/resources/scripts/loupefield/jquery.loupeField.ext.gvnix.js" var="loupe_js_url"/>
-    <script src="${loupe_js_url}" type="text/javascript">
+
+<!-- SmartMenus jQuery plugin -->
+<spring:url value="/resources/scripts/menu/jquery.smartmenus.js" var="smartmenus_js"/>
+    <script src="${smartmenus_js}" type="text/javascript">
         <!--required for FF3 and Opera-->
     </script>
-<spring:url value="/resources/styles/loupefield/loupeField.css" var="loupe_css_url"/>
-    <link href="${loupe_css_url}" media="screen" rel="stylesheet" type="text/css"/>
-<spring:url value="/resources/scripts/loupefield/loupe-callbacks.js" var="loupe_callbacks_js_url"/>
-    <script src="${loupe_callbacks_js_url}" type="text/javascript">
+
+<!-- SmartMenus jQuery Bootstrap Addon -->
+<spring:url value="/resources/scripts/menu/jquery.smartmenus.bootstrap.js" var="smartmenus_bootstrap_js"/>
+    <script src="${smartmenus_bootstrap_js}" type="text/javascript">
         <!--required for FF3 and Opera-->
     </script>
-<spring:url value="/resources/styles/menu/dropdown-submenu.css" var="css_bootstrap_menu_url"/>
-    <link href="${css_bootstrap_menu_url}" media="screen" rel="stylesheet" type="text/css"/>
+
+<!-- SmartMenus css -->
+<spring:url value="/resources/styles/menu/jquery.smartmenus.bootstrap.css" var="css_smartmenu_bootstrap_url"/>
+    <link href="${css_smartmenu_bootstrap_url}" media="screen" rel="stylesheet" type="text/css"/>
+<spring:url value="/resources/styles/menu/sm-core-css.css" var="css_smartmenu_url"/>
+    <link href="${css_smartmenu_url}" media="screen" rel="stylesheet" type="text/css"/>
+
+<!-- slick for overmenu -->
+  <spring:url value="/resources/styles/slick/slick.css" var="slick_css_url" />
+  <link href="${slick_css_url}" media="screen" rel="stylesheet" type="text/css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+  <spring:url value="/resources/styles/slick/slick-theme.css" var="slick_theme_css_url" />
+  <link href="${slick_theme_css_url}" media="screen" rel="stylesheet" type="text/css"/>
+  <!-- Custom for gvNIX -->
+  <spring:url value="/resources/styles/menu/gvnix.slick-theme.css" var="gvnix_slick_theme_css_url" />
+  <link href="${gvnix_slick_theme_css_url}" media="screen" rel="stylesheet" type="text/css"/>
+
+<!-- slick for overmenu -->
+  <spring:url value="/resources/scripts/slick/slick.js" var="slick_js_url" />
+  <script src="${slick_js_url}" type="text/javascript">
+    <!--required for FF3 and Opera -->
+    </script>
+
+    <!-- init functions -->
+    <spring:url value="/resources/scripts/scripts.js" var="init_js_url" />
+  <script src="${init_js_url}" type="text/javascript">
+    <!--required for FF3 and Opera -->
+    </script>
 </jsp:root>
