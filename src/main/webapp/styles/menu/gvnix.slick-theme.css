@@ -15,8 +15,9 @@
   }
 
     .slick-list{
-        height: 1024px; /*tbc improved*/
+        /* height: 1024px; */ /*tbc improved*/
         margin-left: 15px;
+        height: 150px;
     }
 
 /*improved classes Slick with Smartmenu dropdown*/
